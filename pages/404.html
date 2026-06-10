@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Not Found | Dev Blog</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="/">Dev Blog</a>
+      <div class="nav-links">
+        <a href="/">글 목록</a>
+        <a href="/about">소개</a>
+      </div>
+    </div>
+  </nav>
+  <main class="container">
+    <div class="error-page">
+      <h1>404</h1>
+      <p>페이지를 찾을 수 없습니다.</p>
+      <a href="/">홈으로</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <span>Dev Blog &copy; <span id="year"></span></span>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
